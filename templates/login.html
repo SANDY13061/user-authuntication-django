@@ -1,0 +1,21 @@
+{%extends 'base.html' %}
+{% block content %}
+<h1 style="margin-left: 550px;">Login</h1>
+<div class="card">
+    <div class="card-body">
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+        <div style="margin-left: 500px; display:inline-block;">
+           
+            <input type="text" placeholder="UserName" name="username" class="form-control">
+            <br>
+            <br>
+            <input type="password" name="password" placeholder="password" class="form-control">
+
+        </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-left: 550px;margin-top: 30px;" >submit</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

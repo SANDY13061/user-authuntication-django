@@ -1,0 +1,25 @@
+{%extends 'base.html' %}
+{% block content %}
+<h1>Update User Details here :--</h1>
+<div class="card">
+    <div class="card-body">
+        <form  method="POST">
+            {% csrf_token %}
+            
+            <!-- <label for="" style="display: flex; justify-content: center;">USERNAME</label> -->
+            {{form}}    
+            
+
+
+
+        </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 30px;" >Update</button>
+        </form>
+       
+    </div>
+</div>
+
+
+
+{% endblock %}

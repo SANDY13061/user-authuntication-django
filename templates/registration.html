@@ -1,0 +1,32 @@
+{%extends 'base.html' %}
+{% block content %}
+    
+    <div class="card" align="left">
+        <h1 style="margin-left: 550px;">Register</h1>
+        <div class="card-body">
+            {% if registered %}
+             <h1 style="margin-left: 350px;">Thankyou for registration....</h1>
+            {% else %}
+                 <div style="margin-left: 450px;">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form }}
+                        {{ form2 }}
+                        <button type="submit" class="btn btn-primary">submit</button>
+    
+                     </form>
+
+                 </div>
+                 
+               
+
+            {% endif%}
+            
+
+        </div>
+        
+         
+    </div>
+{% endblock %}
+  
+    

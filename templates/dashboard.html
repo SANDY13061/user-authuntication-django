@@ -1,0 +1,24 @@
+{%extends 'base.html' %}
+{% block content %}
+<h1 style="text-align: center;">Dashboard</h1>
+<div class="card" style="margin-top: 30px;">
+    <div class="card-body">
+        <div style="display: flex;"><label for=""><h1>Username:</h1></label> &nbsp;<h1 style="color: blue;">{{user.username}}</h1></div>
+        <div style="display: flex;"><label for=""><h1>Email:</h1></label> &nbsp;<h1 style="color: blue;">{{user.email}}</h1></div>
+        <div style="display: flex;"><label for=""><h1>Address:</h1></label> &nbsp;<h1 style="color: blue;">{{form.address}}</h1></div>
+        <div style="display: flex;"><label for=""><h1>Phone:</h1></label> &nbsp;<h1 style="color: blue;"> {{form.phone}}</h1></div>
+
+       
+        
+       
+
+
+    </div>
+        
+</div>
+
+
+
+
+
+{% endblock %}
