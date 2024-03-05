@@ -63,6 +63,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django_auto_logout.middleware.auto_logout',
+    
 ]
 
 ROOT_URLCONF = 'usermodelproject.urls'
@@ -96,6 +97,9 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+# settings.py
+
+CSRF_TRUSTED_ORIGINS = ['https://user-authuntication-django.onrender.com']
 
 
 # Password validation
